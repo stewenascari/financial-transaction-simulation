@@ -1,0 +1,11 @@
+<div class="container">
+<form [formGroup]="form" class="form-client">
+  <mat-form-field class="form-client-full-width">
+    <mat-label>Numero da conta</mat-label>
+    <input matInput formControlName="conta" type="number" name="conta" required>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="onSubmit()">Entrar</button>
+</form>
+
+</div>
+

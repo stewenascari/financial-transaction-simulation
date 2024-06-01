@@ -1,0 +1,23 @@
+<form [formGroup]="form" class="form-client">
+  <mat-form-field class="form-client-full-width">
+    <mat-label>Nome</mat-label>
+    <input matInput formControlName="nome" name="nome" required>
+  </mat-form-field>
+  <mat-form-field class="form-client-full-width">
+    <mat-label>Idade</mat-label>
+    <input matInput formControlName="idade" type="number" name="idade"  required min="18">
+  </mat-form-field>
+  <mat-form-field class="form-client-full-width">
+    <mat-label>Saldo</mat-label>
+    <input matInput formControlName="saldo" type="number" name="saldo"  required min="0">
+  </mat-form-field>
+  <mat-form-field class="form-client-full-width">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" type="email" name="email" required>
+  </mat-form-field>
+  <mat-form-field class="form-client-full-width">
+    <mat-label>Número da Conta</mat-label>
+    <input matInput formControlName="numero_conta" type="number" name="numero_conta" required>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="onSubmit()">Cadastrar</button>
+</form>

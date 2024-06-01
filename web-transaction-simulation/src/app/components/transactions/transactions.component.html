@@ -1,0 +1,16 @@
+<h2>Transações</h2>
+<form (ngSubmit)="onSubmit()">
+  <label>Número da Conta:</label>
+  <input name="numero_conta" required>
+  <br>
+  <label>Tipo:</label>
+  <select name="tipo" required>
+    <option value="credito">Crédito</option>
+    <option value="debito">Débito</option>
+  </select>
+  <br>
+  <label>Quantia:</label>
+  <input type="number" name="valor" required>
+  <br>
+  <button type="submit">Registrar</button>
+</form>
